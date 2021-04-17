@@ -1,0 +1,749 @@
+@import "pages/whatWeDo";
+@import "pages/news";
+@import "pages/newsDetail";
+@import "pages/vacancy";
+@import "pages/vacancyDetail";
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
+
+// for navbar
+.navbar-light {
+  .nav-links {
+    color: white;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}
+.scroll-nav {
+  background-color: #ffffff;
+  a {
+    color: black !important;
+  }
+}
+
+// for main section
+#main {
+  width: 100%;
+  height: 100vh;
+
+  .image-div {
+    position: relative;
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .image-text {
+      position: absolute;
+      top: 0;
+      left: 0 !important;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+      height: 100%;
+      width: 100%;
+      padding-left: 190px;
+      padding-right: 300px;
+      display: flex;
+      align-items: center;
+
+      .text {
+        width: 60%;
+      }
+
+      h1 {
+        font-size: 48px;
+        font-weight: 600;
+        padding: 0 0 16px;
+      }
+    }
+  }
+}
+
+// for whatWeDo section
+#whatWeDo {
+  padding: 35px 0 60px;
+
+  .whatWeDo-header {
+    padding-bottom: 40px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      color: #2d3192;
+    }
+
+    .readMore {
+      border: 4px solid #dfe4eb;
+      border-radius: 12px;
+      padding: 12px 24px;
+      color: #222;
+      font-weight: 600;
+      transition: all 0.15s linear;
+
+      i {
+        padding-left: 45px;
+        color: #ff931e;
+      }
+
+      &:hover {
+        border: 4px solid #ff931e;
+        transition: all 0.15s linear;
+      }
+    }
+  }
+
+  .whatWeDo-card {
+    border: 1px solid #d5dde4;
+    padding: 50px 24px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    h3 {
+      padding: 16px 0;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    p {
+      color: #5f6773;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+// for solutions section
+#solutions {
+  background-image: url(../img/solutions_bg-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  overflow-x: hidden;
+  color: #ffffff;
+
+  h1 {
+    font-size: 54px;
+    padding: 35px 120px 60px 120px;
+  }
+
+  ul {
+    padding: 40px 60px;
+    margin: 0;
+    background: rgba(45, 49, 146, 0.6);
+    height: 100%;
+    list-style: none;
+    font-size: 21px;
+
+    li {
+      padding: 32px 0;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+  }
+}
+
+// for info section
+#info {
+  padding-top: 60px;
+
+  h2 {
+    padding-bottom: 40px;
+    margin: 0;
+    color: #2d3192;
+    font-weight: bold;
+  }
+
+  .info-text {
+    padding: 90px 0;
+
+    h3 {
+      font-size: 48px;
+      color: #ff931e;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+
+// for map section
+#map {
+  overflow-x: hidden;
+
+  .georgia {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+
+    h2 {
+      color: #2d3192;
+      font-weight: bold;
+    }
+  }
+  .worldMap {
+    position: relative;
+  }
+
+  .symbols {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+
+    ul {
+      border: 1px solid #d3d8e7;
+      border-radius: 4px;
+      width: fit-content;
+      padding: 27px;
+      list-style: none;
+
+      .operations {
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          position: absolute;
+          left: -13px;
+          top: calc(50% - 3px);
+          background: #ff931e;
+        }
+
+        &::before{
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: absolute;
+          left: -20px;
+          top: calc(50% - 10px);
+          opacity: 0.3;
+          background: #ff931e;
+        }
+      }
+
+      .pipeline{
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          position: absolute;
+          left: -13px;
+          top: calc(50% - 3px);
+          background: #2D3192;
+        }
+
+        &::before{
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: absolute;
+          left: -20px;
+          top: calc(50% - 10px);
+          opacity: 0.3;
+          background: #2D3192;
+        }
+      }
+
+      .both{
+          position: relative;
+          img{
+            position: absolute;
+            top: 0;
+            left: -20px;
+        }
+      }
+    }
+  }
+}
+
+// for client section
+#client {
+  background: #f6f8fe;
+  padding: 35px 0 60px;
+
+  h2 {
+    font-size: 36px;
+    padding-bottom: 30px;
+    color: #2d3192;
+    font-weight: bold;
+  }
+
+  .img {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #d5dde4;
+
+    img {
+      max-height: 90px;
+      max-width: calc(100% - 60px);
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+// for teams section
+#teams {
+  padding: 35px 0 60px;
+  .team {
+    margin: 0 15px 48px;
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+      letter-spacing: -0.02em;
+      color: #5f6773;
+    }
+
+    img {
+      background-image: url(../img/figure_green_bg.png);
+    }
+  }
+}
+
+// for vacancies section
+#vacancies {
+  background: #f6f8fe;
+  padding: 35px 0 60px;
+
+  h2 {
+    color: #2d3192;
+    font-size: 36px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .workWithUs-card {
+    padding-bottom: 30px;
+    .img {
+      padding-bottom: 10px;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .vacancies-text {
+    color: #fff;
+    background: #2d3192;
+    padding: 40px 60px;
+    border-radius: 4px;
+    position: relative;
+    left: -73px;
+    top: 30px;
+    overflow-x: hidden;
+
+    h3 {
+      font-size: 30px;
+      margin: 0;
+      padding-bottom: 32px;
+      font-weight: bold;
+    }
+
+    p {
+      padding-bottom: 40px;
+      margin: 0;
+    }
+
+    .vacancies-btn {
+      a {
+        padding: 15px 24px;
+        color: #fff;
+        box-shadow: inset 0 0 0 3px #fff;
+        border-radius: 12px;
+        font-weight: 600;
+
+        i {
+          padding-left: 45px;
+          color: #ff931e;
+        }
+      }
+    }
+  }
+}
+
+// for whatWeDo section
+#whatWeDo {
+  .news-card {
+    img {
+      margin-bottom: 24px;
+      border-radius: 6px;
+    }
+    .content {
+      font-weight: 500;
+      font-size: 18px;
+      padding-bottom: 48px;
+      color: #222;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .time {
+      font-size: 18px;
+      color: #5f6773;
+      margin: 0;
+    }
+  }
+}
+
+// for footer
+footer {
+  padding: 35px 0 25px;
+  background-color: #000;
+  h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .scroll-nav {
+    background-color: transparent !important;
+    .nav-tabs {
+      border: none !important;
+    }
+    .our {
+      border: 3px solid white;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff !important;
+      span {
+        color: #ff931e !important;
+        margin-left: 30px;
+      }
+      &:hover {
+        border-color: #ff931e !important;
+        color: #fff !important;
+      }
+    }
+    .nav-link {
+      margin-right: 30px;
+      color: white !important;
+      a {
+        font-size: 18px;
+      }
+      &:hover {
+        border-color: transparent !important;
+        color: #ff931e !important;
+      }
+    }
+  }
+  .tab-content {
+    color: #fff;
+  }
+  .last-foot {
+    margin-top: 20%;
+    color: white;
+    font-size: 14px;
+    span {
+      color: #ff931e;
+    }
+    a {
+      color: white;
+      &:hover {
+        color: white;
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: 991px) {
+  // responsive for main section
+  #main {
+    .image-text {
+      padding: 20px !important;
+      h1 {
+        font-size: 32px !important;
+      }
+
+      .text {
+        width: 80% !important;
+      }
+    }
+  }
+
+  // responsive for whatWeDo section
+  #whatWeDo {
+    padding: 30px 0;
+    h2 {
+      font-size: 32px !important;
+    }
+    .whatWeDo-card {
+      padding: 20px 10px;
+      margin-bottom: 15px;
+
+      h3 {
+        font-size: 21px;
+      }
+    }
+  }
+
+  // responsive for solutions section
+  #solutions {
+    height: 100%;
+
+    h1 {
+      font-size: 32px;
+      padding: 35px 80px 60px 80px;
+    }
+
+    ul {
+      font-size: 18px;
+      padding: 90px 39px;
+    }
+  }
+
+  // responsive for info section
+  #info {
+    padding: 35px 0 40px;
+
+    h2 {
+      padding-bottom: 10px;
+    }
+
+    .info-text {
+      padding: 40px 0;
+
+      h3 {
+        font-size: 32px;
+      }
+    }
+  }
+
+  // responsive for client section
+  #client {
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  // responsive for teams section
+  #teams {
+    display: none;
+  }
+
+  // responsive for vacancies section
+  #vacancies {
+    h2 {
+      font-size: 32px;
+    }
+
+    .vacancies-text {
+      padding: 30px;
+      top: 0px;
+      width: 115%;
+
+      h3 {
+        font-size: 24px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  // responsive for whatWeDo section
+  #whatWeDo {
+    .news-card {
+      img {
+        margin-bottom: 15px;
+      }
+      .content {
+        padding-bottom: 24px;
+        font-size: 16px;
+      }
+
+      .time {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // responsive for main section
+  #main {
+    height: 50vh;
+    // padding: 130px 0;
+
+    .image-div {
+      height: 50vh;
+      // padding: 130px 0;
+
+      img {
+        height: 50vh;
+      }
+
+      .text {
+        width: 60% !important;
+        h1 {
+          font-size: 21px !important;
+        }
+      }
+    }
+  }
+
+  // responsive for whatWeDo section
+  #whatWeDo {
+    h2 {
+      font-size: 24px !important;
+    }
+    .whatWeDo-header {
+      flex-direction: column;
+    }
+
+    .whatWeDo-card {
+      padding: 20px;
+
+      h3 {
+        padding-bottom: 12px !important;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // responsive for solutions section
+  #solutions {
+    h1 {
+      font-size: 27px;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    ul {
+      font-size: 16px;
+      padding: 20px;
+      text-align: center;
+      li {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  // responsive for info section
+  #info {
+    padding: 30px 0;
+    text-align: center;
+
+    h2 {
+      font-size: 24px;
+      padding-bottom: 10px;
+    }
+
+    .info-text {
+      padding: 20px 0;
+
+      h3 {
+        font-size: 27px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  // responsive for client section
+  #client {
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  // responsive for vacancies section
+  #vacancies {
+    h2 {
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
+
+    .workWithUs-card {
+      text-align: center;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+      h4 {
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .vacancies-text {
+      padding: 20px;
+      padding-bottom: 30px;
+      left: 0px;
+      width: 100%;
+
+      h3 {
+        font-size: 21px;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        padding-bottom: 31px;
+      }
+    }
+  }
+
+  // responsive for whatWeDo section
+  #whatWeDo {
+    .news-card {
+      padding-bottom: 30px;
+
+      img {
+        margin-bottom: 15px;
+      }
+      .content {
+        padding-bottom: 10px;
+      }
+
+      .time {
+        font-size: 14px;
+      }
+    }
+  }
+}

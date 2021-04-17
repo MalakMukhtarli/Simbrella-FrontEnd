@@ -1,0 +1,55 @@
+#header-newsDetail {
+  height: 110px;
+  background-color: #0c0d26;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+#newsDetail {
+  padding: 20px 0 90px;
+  h1 {
+    padding: 0px 0 30px;
+    margin: 0 0 20px;
+    color: #2d3192;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .img {
+    padding-bottom: 60px;
+  }
+
+  p {
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #222;
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: 991px){
+    #newsDetail{
+        h1{
+            font-size: 27px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+  #newsDetail {
+  padding: 20px 0 40px;
+  h1 {
+      padding-bottom: 25px;
+      font-size: 21px;
+    }
+    .img {
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      padding-bottom: 25px;
+    }
+  }
+}

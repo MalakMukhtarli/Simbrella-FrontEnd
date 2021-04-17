@@ -1,0 +1,121 @@
+#header {
+  height: 480px;
+  background-image: url(../img/we_do_bg.jpg);
+  background-position: center;
+  padding-bottom: 70px;
+  position: relative;
+
+  .whatWeDo-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .text {
+    color: #fff;
+    z-index: 9;
+  }
+}
+
+#whatWeDo-page {
+  background-image: url(../img/single_image.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  .whatWeDo-bg {
+    background-color: #f6f8fe;
+    padding: 100px 0;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 20px;
+
+      li {
+        padding-left: 21px;
+        margin-bottom: 32px;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background: #ff931e;
+          position: absolute;
+          left: 0;
+          top: calc(50% - 4px);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .whatWeDo-free {
+    max-height: 480px;
+    min-height: 270px;
+    height: 30vw;
+  }
+  .whatWeDo-card {
+    background-color: #fff;
+    padding: 40px 24px 60px;
+    max-width: 100%;
+    margin-right: 100px;
+
+    img {
+      padding-bottom: 35px;
+    }
+
+    h3 {
+      font-size: 24px;
+      padding-bottom: 16px;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+
+// RESPONSIVE
+
+@media (max-width: 991px){
+    #whatWeDo-page{
+        .whatWeDo-bg{
+            padding: 40px 0;
+
+            ul{
+                padding-top: 30px;
+            }
+        }
+        .whatWeDo-card {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 767px){
+    #whatWeDo-page{
+        .whatWeDo-bg{
+            // padding: 40px 0;
+
+            ul{
+                padding-top: 30px;
+                font-size: 16px;
+                li {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        .whatWeDo-card {
+            padding: 40px 24px 60px;
+        }
+    }
+    
+}
